@@ -674,6 +674,7 @@ header .nav .nav-icon a {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .section-7 .inner-body .card{
   width: calc(100% / 3.2);
@@ -799,4 +800,43 @@ footer{
   bottom: 0;
   right: 0;
   width: 100%;
+}
+header .menu-short i{
+  font-size: 30px;
+  color: var(--color-text-bold);
+  cursor: pointer;
+}
+header .menu-short{
+  display: none;
+}
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  header .nav-list{
+    display: none;
+  }
+  .section-7{
+    height: 900px;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  header .nav-icon{
+    display: none;
+  }
+  header .menu-short{
+    display: block;
+  }
+  .section-7 .inner-body .card-content{
+    font-size: 20px;
+  }
+  .section-7 .inner-body .card-intro{
+    flex-wrap: wrap;
+  }
+  .section-6 .inner-last .inner-box .inner-info{
+    flex-wrap: wrap;
+  }
+  .section-6 .inner-last .inner-box .inner-cta{
+    width: 30%;
+    margin-left: 30px;
+  }
 }

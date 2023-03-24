@@ -22,6 +22,7 @@
 body{
     color: var(--color-text);
     font-family: 'DM Sans', sans-serif;
+    min-width: 480px;
 }
 a{
     text-decoration: none;
